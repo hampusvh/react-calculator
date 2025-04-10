@@ -1,3 +1,5 @@
+import "../App.css";
+
 function Button({ value }) {
   return <button>{value}</button>;
 }
