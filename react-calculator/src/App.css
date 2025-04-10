@@ -1,3 +1,12 @@
 body {
-  background-color: grey;
+  background-color: rgb(187, 187, 187);
+}
+
+.calculator {
+  width: 250px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
