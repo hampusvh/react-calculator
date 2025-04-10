@@ -1,7 +1,7 @@
 import "../App.css";
 
-function Button({ value }) {
-  return <button>{value}</button>;
+function Button({ value, onButtonClick }) {
+  return <button onClick={() => onButtonClick(value)}>{value}</button>;
 }
 
 export default Button;
