@@ -5,7 +5,13 @@ import ButtonGrid from "./ButtonGrid";
 
 function Calculator() {
   const handleButtonClick = (value) => {
-    setInput(input + value);
+    if (value === "=") {
+      setInput(eval(input));
+    } else if (value === "c") {
+      setInput("");
+    } else {
+      setInput(input + value);
+    }
   };
 
   const [input, setInput] = useState("");
