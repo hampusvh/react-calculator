@@ -1,7 +1,7 @@
 import "../App.css";
 
-function Display() {
-  return <div className="display">123</div>;
+function Display({ input }) {
+  return <div className="display">{input}</div>;
 }
 
 export default Display;

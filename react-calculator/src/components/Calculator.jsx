@@ -5,12 +5,14 @@ import ButtonGrid from "./ButtonGrid";
 
 function Calculator() {
   const handleButtonClick = (value) => {
-    console.log("Button:", value);
+    setInput(input + value);
   };
+
+  const [input, setInput] = useState("");
 
   return (
     <div className="calculator">
-      <Display />
+      <Display input={input} />
       <ButtonGrid onButtonClick={handleButtonClick} />
     </div>
   );
