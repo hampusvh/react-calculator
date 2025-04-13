@@ -7,7 +7,7 @@ function Calculator() {
   const handleButtonClick = (value) => {
     if (value === "=") {
       setInput(eval(input));
-    } else if (value === "c") {
+    } else if (value === "C") {
       setInput("");
     } else {
       setInput(input + value);

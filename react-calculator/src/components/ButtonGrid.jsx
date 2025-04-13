@@ -16,7 +16,7 @@ function ButtonGrid({ onButtonClick }) {
       <Button value="3" onButtonClick={onButtonClick}></Button>
       <Button value="-" onButtonClick={onButtonClick}></Button>
       <Button value="0" onButtonClick={onButtonClick}></Button>
-      <Button value="c" onButtonClick={onButtonClick}></Button>
+      <Button value="C" onButtonClick={onButtonClick}></Button>
       <Button value="=" onButtonClick={onButtonClick}></Button>
       <Button value="+" onButtonClick={onButtonClick}></Button>
     </div>
