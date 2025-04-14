@@ -16,9 +16,17 @@ function Calculator() {
 
   const [input, setInput] = useState("");
 
+  const handleInputChange = (event) => {
+    const value = event.target.value;
+    const allowed = /^[0-9]*$/;
+    if (allowed.test(value)) {
+      setInput(value);
+    }
+  };
+
   return (
     <div className="calculator">
-      <Display input={input} />
+      <Display input={input} onChange={handleInputChange} />
       <ButtonGrid onButtonClick={handleButtonClick} />
     </div>
   );
