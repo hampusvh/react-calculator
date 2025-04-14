@@ -1,24 +1,29 @@
 import Button from "./Button";
 
 function ButtonGrid({ onButtonClick }) {
+  const buttons = [
+    "7",
+    "8",
+    "9",
+    "/",
+    "4",
+    "5",
+    "6",
+    "*",
+    "1",
+    "2",
+    "3",
+    "-",
+    "0",
+    "C",
+    "=",
+    "+",
+  ];
   return (
     <div className="button-grid">
-      <Button value="7" onButtonClick={onButtonClick}></Button>
-      <Button value="8" onButtonClick={onButtonClick}></Button>
-      <Button value="9" onButtonClick={onButtonClick}></Button>
-      <Button value="/" onButtonClick={onButtonClick}></Button>
-      <Button value="4" onButtonClick={onButtonClick}></Button>
-      <Button value="5" onButtonClick={onButtonClick}></Button>
-      <Button value="6" onButtonClick={onButtonClick}></Button>
-      <Button value="*" onButtonClick={onButtonClick}></Button>
-      <Button value="1" onButtonClick={onButtonClick}></Button>
-      <Button value="2" onButtonClick={onButtonClick}></Button>
-      <Button value="3" onButtonClick={onButtonClick}></Button>
-      <Button value="-" onButtonClick={onButtonClick}></Button>
-      <Button value="0" onButtonClick={onButtonClick}></Button>
-      <Button value="C" onButtonClick={onButtonClick}></Button>
-      <Button value="=" onButtonClick={onButtonClick}></Button>
-      <Button value="+" onButtonClick={onButtonClick}></Button>
+      {buttons.map((value, index) => (
+        <Button key={index} value={value} onButtonClick={onButtonClick} />
+      ))}
     </div>
   );
 }

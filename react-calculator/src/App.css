@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(204, 207, 206);
+  background-color: rgb(255, 255, 255);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -7,6 +7,7 @@ body {
 }
 
 .calculator {
+  background-color: rgb(159, 89, 225);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,15 +21,17 @@ body {
 }
 
 .display {
-  font-size: 1rem;
+  box-sizing: border-box;
+  font-size: 1.5rem;
   background-color: white;
   width: 100%;
-  height: 30px;
+  height: 50px;
   border-radius: 5px;
   text-align: right;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 5px 10px;
 }
 
 .button-grid {
@@ -54,4 +57,9 @@ button:hover {
 
 button:active {
   background-color: #c0c0c0;
+}
+
+button[value="="] {
+  background-color: #ffd166;
+  font-weight: bold;
 }
