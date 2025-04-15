@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(179, 179, 179);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@ body {
 }
 
 .calculator {
-  background-color: rgb(159, 89, 225);
+  background-color: rgb(78, 78, 79);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +22,7 @@ body {
 
 .display {
   box-sizing: border-box;
+  margin-bottom: 10px;
   font-size: 1.5rem;
   background-color: white;
   width: 100%;
@@ -32,6 +33,8 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding: 5px 10px;
+  background-color: rgb(125, 123, 123);
+  color: rgb(78, 251, 127);
 }
 
 .button-grid {
@@ -47,7 +50,7 @@ button {
   font-size: 1rem;
   border-radius: 5px;
   border: none;
-  background-color: #f0f0f0;
+  background-color: #9f9d9d;
   transition: background-color 0.2s;
 }
 
@@ -60,6 +63,34 @@ button:active {
 }
 
 button[value="="] {
+  background-color: #66ff99bc;
+  font-weight: bold;
+}
+
+button[value="+"],
+button[value="-"],
+button[value="*"],
+button[value="/"] {
   background-color: #ffd166;
   font-weight: bold;
+}
+
+.equals {
+  grid-column: span 2;
+}
+
+.dummy {
+  grid-column: span 2;
+  background: transparent;
+  border: none;
+  cursor: default;
+}
+
+.dummy:hover,
+.dummy:active {
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none;
 }

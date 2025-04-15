@@ -15,9 +15,11 @@ function ButtonGrid({ onButtonClick }) {
     "3",
     "-",
     "0",
+    ".,",
     "C",
-    "=",
     "+",
+    "dummy",
+    "=",
   ];
   return (
     <div className="button-grid">
